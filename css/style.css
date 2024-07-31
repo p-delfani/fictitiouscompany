@@ -1,0 +1,319 @@
+@import url(../css/clash-display.css);
+
+:root{
+    --c-dark: #272829;
+    --c-brand:#4e57d4;
+    --c-brand-light:#6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body:#727272;
+    --font-base:"ClashDisplay", sans-serif;
+    --box-shadow:0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+
+}
+
+body{
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1,h2,h3,h4,h5,h6
+.h1, .h2 , .h3 , .h4 , .h5 , .h6{
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--c-brand-light);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.section-padding{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+
+}
+
+.image-zoom{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-zoom-warpper{
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-warpper img{
+    transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-warpper img{
+    transform: scale(1.1);
+}
+.section{
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+}
+
+.navbar{
+    box-shadow: var(--box-shadow) ;
+}
+
+.navbar-nav .nav-link{
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--c-brand);
+}
+
+.btn{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand{
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+}
+
+.btn-brand:hover{
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+}
+
+
+#home{
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507),rgba(var(--c-brand-rgb), 0.494)), url(../images/Hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.section-title{
+    margin-bottom: 40px;
+}
+
+.section-title .line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconbox{
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb),0.1);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+}
+
+.service{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.service::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--c-brand-rgb),0.2) ;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+}
+
+.service:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-brand);
+    z-index: -1;
+}
+
+.service h5{
+    color: black;
+}
+.service:hover h5,
+.service:hover p {
+    color: white;
+
+}
+
+.service:hover .iconbox{
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+#counter{
+
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8),rgba(var(--c-brand-rgb), 0.8)), url(../images/Hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.profilo-item .iconbox{
+
+    background-color: var(--c-brand);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    opacity: 0;
+}
+
+.profilo-item:hover .iconbox{
+    opacity: 1;
+    top: 50%;
+}
+
+.review-head{
+    position: relative;
+}
+
+.review-head::after{
+    content: "";
+    width:28px;
+    height: 28px;
+    position: absolute;
+    bottom: -14px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+.review small{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--c-brand);
+}
+
+
+.team-member-content{
+    background-color: var(--c-brand);
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    width: calc(100% - 50px);
+    transform: translate(-50%);
+    padding: 24px;
+    transition: var(--transition);
+    opacity: 0;
+
+}
+
+.team-member:hover .team-member-content{
+    opacity: 1;
+    bottom: 24px;
+}
+
+#contact{
+    position: relative;
+    z-index: 2;
+}
+
+#contact::after{
+    content: "";
+    width:100%;
+    height: 70%;
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8),rgba(var(--c-brand-rgb), 0.8)), url(../images/Hero.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#contact .form-control{
+    border-radius: 0;
+}
+
+#contact .form-control:focus{
+    box-shadow: none;
+    border-color: var(--c-brand);
+}
+
+footer{
+    padding-top: 100px;
+}
+
+.footer-top{
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer li,
+footer p,
+footer a{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer .line{
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.socail-icons a{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 100px;
+
+}
+
+.socail-icons a:hover{
+    background-color: var(--c-brand);
+    color: white;
+}
