@@ -11,7 +11,7 @@ Demo Screeshots:
 
 
 Contact:
-If you want to contact with me you can reach me at Gmial: parmis.delfani84@gmial.com 
+If you want to contact with me you can reach me at Gmial: parmis.delfani84@gmail.com 
 
 
 License:
