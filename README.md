@@ -1,7 +1,7 @@
-                                                                                Fictitiouscompany - Website
-                                                                              -------------------------------
-                                                                  Fictitiouscompany is a fully responsive app landing page,
-                                                             Responsive for all devices, build using HTML, CSS, and JavaScript.
+Fictitiouscompany - Website
+-------------------------------
+Fictitiouscompany is a fully responsive app landing page,
+Responsive for all devices, build using HTML, CSS, and JavaScript.
 
 Demo Screeshots:
 
